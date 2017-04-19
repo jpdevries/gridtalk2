@@ -1,0 +1,28 @@
+body {
+	background-image: url('../images/gridtalk-and-background.jpg');
+	background-repeat:no-repeat;
+  background-size:cover;
+}
+
+
+#regForm{
+	padding-top: 95%;
+	padding-left: 20%;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    background: transparent;
+}
+
+
+
+.demo-card-square.mdl-card {
+  width: 320px;
+  height: 320px;
+}
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background:
+    url('../images/arrow_right.png') bottom right 15% no-repeat #46B6AC;
+}
+
