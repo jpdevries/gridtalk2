@@ -5,10 +5,16 @@ body {
 }
 
 
-#regForm{
+#regForm, #logIn{
 	padding-top: 95%;
 	padding-left: 20%;
 }
+
+#wrapperLogIn, #wrapperRegForm {
+  margin-left: 30%;
+}
+
+
 
 input[type="text"], input[type="password"], input[type="email"] {
     background: transparent;
