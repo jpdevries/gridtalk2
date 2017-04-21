@@ -6,7 +6,7 @@ var setupController = require('./controllers/setupController');
 var apiController = require('./controllers/apiController');
 var passport = require('passport');
 const routes = require('./routes');
-const passportConfig = require('./config/passport');
+const passportConfig = require('./config/passport')(passport);
 
 
 var port = process.env.PORT || 3000;
