@@ -1,20 +1,31 @@
-var mongoose = require('mongoose');
-var bcrypt = require('bcrypt');
+const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
 
-var Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-var userRegSchema = new Schema({
-	username: String,
-	firstName: String,
-	lastName: String,
-	email: String
+const userSchema = new Schema({
+	email: {
+    type: String,
+    unique: true,
+    required: true,
+    lowercase:true,
+    trim: true
+  },
+  firstName: {
+    type: String,
+    required: true,
+    trim: true
+  },
+  lastName: {
+    type: String,
+    required: true,
+    trim: true
+  },
+  password: {
+    type: String,
+    trim: true
+  }
 });
-
-
-
-
-
-
 
 
 
@@ -28,6 +39,6 @@ userSchema.methods.hashPassword = function(password) {
 
 
 
-const User = mongoose.model('User', userRegSchema);
+const User = mongoose.model('User', userSchema);
 
 module.exports = User;

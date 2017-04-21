@@ -5,7 +5,7 @@ const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 const User = require('../models/user');
 
 //Load auth variables
-const configAuth = require('./config/auth');
+// const configAuth = require('./config/auth');
 
 
 module.exports = function(passport) {
@@ -80,18 +80,6 @@ module.exports = function(passport) {
 	      return done(null, user);
 	    });
 	  }));
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

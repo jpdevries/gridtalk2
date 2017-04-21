@@ -43,44 +43,37 @@
  });
 
 //REGISTRATION PAGE SUBMIT BUTTON ACTION
-$("#registerDataBttn").on('click', function(event) {
-	event.preventDefault();
+// $("#registerDataBttn").on('click', function(event) {
+// 	event.preventDefault();
 
-	var userName = $("input[name='username']").val();
-	var userEmail = $("input[name='useremail']").val();
-	var userPass = $("input[name='password']").val();
+// 	var userName = $("input[name='username']").val();
+// 	var userEmail = $("input[name='useremail']").val();
+// 	var userPass = $("input[name='password']").val();
 
-	var formData = {
-		user: userName,
-		password: userPass,
-		email: userEmail
-	}
+// 	var formData = {
+// 		user: userName,
+// 		password: userPass,
+// 		email: userEmail
+// 	}
 
-	console.log(userName);
-	console.log(userEmail);
-	console.log(userPass);
-
-
-
-	$.ajax({
-            type: "POST",
-            url: "/",
-            data: formData  
-        })
-
-		.done(function() {
-	    	alert( "User created");
-	 	});
+// 	console.log(userName);
+// 	console.log(userEmail);
+// 	console.log(userPass);
 
 
 
+// 	$.ajax({
+//             type: "POST",
+//             url: "/",
+//             data: formData  
+//         })
+
+// 		.done(function() {
+// 	    	alert( "User created");
+// 	 	});
 
 
-
-
-
-
-});
+// });
 
 
 

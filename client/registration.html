@@ -20,10 +20,10 @@
 <body>
 	<div class="row">
 	  <div class="small-6 medium-4 columns" id="wrapperRegForm">
-		<form id="regForm">
-			<input type="text" name="username" placeholder="USERNAME"><br>
-			<input type="password" name="password" placeholder="PASSWORD"><br>
-			<input type="email" name="useremail" placeholder="EMAIL"><br>
+		<form id="regForm" action="/register" method="POST">
+			<input type="text" name="username" placeholder="USERNAME" id="styleInput"><br>
+			<input type="password" name="password" placeholder="PASSWORD" id="styleInput"><br>
+			<input type="email" name="useremail" placeholder="EMAIL" id="styleInput"><br>
 			<input type="submit" value="REGISTER" id="registerDataBttn">
 		</form>
 	  </div>
